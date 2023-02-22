@@ -1,3 +1,5 @@
+package package1;
+
 public class Student {
     // class is the name group of properties and functions
     // class is a template of an object

@@ -41,16 +41,22 @@ public class Constructor {
         this(2, "kamal");
     }
 
-    Constructor(int rollNo, String name) {
+    public Constructor(int rollNo, String name) {
         this.rollNo = rollNo;
         this.name = name;
     }
 
-    public static void main(String[] args) {
+    public Constructor() {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
+
+
+
         // constructor is special function that runs when we create an object and it
         // allocated some variables.
         // here its a bydefault constructor.
         // and we can make our own constructor as well, just give in parameters.
 
-    }
+
 }
