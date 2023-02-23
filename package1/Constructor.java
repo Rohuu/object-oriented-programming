@@ -7,19 +7,16 @@ public class Constructor {
 
     Constructor rohit = new Constructor();
 
-    Constructor() {
-        // rohit.rollNo=1;
-        // rohit.name="rohit";
-        // we can make like this also... but for every new object we have to create
-        // different constructor.
-        // so we write this
-        this.rollNo = rollNo;
-        this.name = name;
+   // Constructor() {
+        // rohit.rollNo=1;         // we can make like this also... but for every new object we have to create
+        // rohit.name="rohit";          // different constructor.
+    //   this.rollNo = rollNo;              // so we write "this".
+    //    this.name = name;
         // this is now constructor with no parameter.
         // we have to set values while making object, in this case.
         // other option is parameterised constructor.
 
-    }
+    //}
 
     Constructor(int rollNo, String name) {
         this.rollNo = rollNo;
@@ -41,15 +38,9 @@ public class Constructor {
         this(2, "kamal");
     }
 
-    public Constructor(int rollNo, String name) {
-        this.rollNo = rollNo;
-        this.name = name;
-    }
 
-    public Constructor() {
-        this.rollNo = rollNo;
-        this.name = name;
-    }
+
+
 
 
 
