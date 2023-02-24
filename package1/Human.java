@@ -38,15 +38,18 @@ class HomoSapiens {
         this.age = age;
         this.name = name;
         this.married = married;
-        this.population+=1;
+        // this.population+=1; // here this is object reference.
+        // static variable are accessed by class name aswell.
+        // so we can write as below
+        HomoSapiens.population+=1;
     }
 
     public static void main(String[] args) {
         HomoSapiens rohita=new HomoSapiens(12,"Rohita",false);
         HomoSapiens sagar=new HomoSapiens(11,"Sagar",false);
-        System.out.println(rohita.company);
+        System.out.println(HomoSapiens.company);// accessing with class reference
         System.out.println(sagar.company);
-        System.out.println(rohita.population);// now it will print 2
+        System.out.println(HomoSapiens.population);// now it will print 2
         System.out.println(sagar.population);// this too will print 2
         //coz population is same for each object
     }
