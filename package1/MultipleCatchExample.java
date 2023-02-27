@@ -21,5 +21,6 @@ public class MultipleCatchExample {
             // here java will check above two exception
             // both are not right then this ArithmeticException will be executed.
         }
+        System.out.println("Final-Message: this msg will not be printed if java's default try-catch would run");
     }
 }
