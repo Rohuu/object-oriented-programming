@@ -1,8 +1,8 @@
 package package1;
 
 public class Box {
-    double length;
-    double width;
+    double length; // if we write private double length, then length will be accessible in this class only
+    double width;   // not even from its child class
     double height;
 
     Box() { // constructor with default set values
@@ -60,5 +60,18 @@ public class Box {
 
         BoxWithWeight box6 = new BoxWithWeight(1, 2, 3, 4);
         System.out.println(box6.weight + " " + box6.length + " " + box6.width + " " + box6.height);
+
+        // parent class can't access the properties of child class
+        // but......
+
+        Box box10=new BoxWithWeight(5,6,8,7);
+        // now can box10.weight is possible
+        // Ans is NO...
+        // here reference variable can be parent class type but the object is of child class only
+        // so by the reference of parent class, we can access properties of only parent class.
+        // System.out.println(box10.weight); //gives error
+        // but........
+        System.out.println(box10.length+box10.width+box10.height);
+        // all this is perfectly fine.
     }
 }
