@@ -5,26 +5,27 @@ public class Box {
     double width;
     double height;
 
-    Box() {
+    Box() { // constructor with default set values
         this.length=-1;
         this.width=-1;
         this.height=-1;
     }
 
     // cube
-    Box(double side){
+    Box(double side){ // constructor with single value
         this.length=side;
         this.width=side;
         this.height=side;
     }
 
-    public Box(double length, double width, double height) {
+    public Box(double length, double width, double height) { // constructor with all three values
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
-    Box(Box old){
+    Box(Box old){ // constructor with object as a parameter
+        // so that we can manipulate the properties of already created objects
         this.length= old.length;
         this.height= old.height;
         this.width=old.width;
