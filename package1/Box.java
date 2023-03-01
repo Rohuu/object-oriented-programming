@@ -66,12 +66,23 @@ public class Box {
 
         Box box10=new BoxWithWeight(5,6,8,7);
         // now can box10.weight is possible
-        // Ans is NO...
-        // here reference variable can be parent class type but the object is of child class only
+        // answer is NO... coz weight is initialized in child class.
+        // here reference variable can be Parent class type but the object is of child class only
         // so by the reference of parent class, we can access properties of only parent class.
         // System.out.println(box10.weight); //gives error
         // but........
         System.out.println(box10.length+box10.width+box10.height);
         // all this is perfectly fine.
+
+        // BoxWithWeight box11=new Box(1,2,3,4);
+        // we are using BoxWeight class reference, so we can access the properties of BoxWeight class but but but
+        // but we are calling the constructor of parent class
+        // this too is giving error coz... constructor of box class doesn't know how to set weight
+        // parent class can't call the constructor of child class.
+
+
+        // above classes don't know what classes are below but
+        // below classes know what classes are above
     }
+
 }
