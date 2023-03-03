@@ -56,5 +56,12 @@ public class ObjectDemo {
             // by using (return this.id==((ObjectDemo)obj).marksOutOfHundred;)
             System.out.println("object1 is equal to object2 using .equals() method");
         }
+
+        ObjectDemo objectDemo4=new ObjectDemo(4,56);
+        System.out.println(objectDemo4 instanceof ObjectDemo);
+        // instanceof method   // will return true
+
+        System.out.println(objectDemo4 instanceof Object);
+        // true, coz every object is an instance of Object class
     }
 }
