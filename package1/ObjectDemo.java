@@ -67,6 +67,7 @@ public class ObjectDemo {
 
         // getClass();
         System.out.println(objectDemo1.getClass());
+        // returns the class of an object
         // .getClass is used to get some data of the class by writing dot ahead of getClass()
 
         System.out.println(objectDemo4.getClass().getFields());
