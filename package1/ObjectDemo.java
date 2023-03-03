@@ -63,5 +63,12 @@ public class ObjectDemo {
 
         System.out.println(objectDemo4 instanceof Object);
         // true, coz every object is an instance of Object class
+
+
+        // getClass();
+        System.out.println(objectDemo1.getClass());
+        // .getClass is used to get some data of the class by writing dot ahead of getClass()
+
+        System.out.println(objectDemo4.getClass().getFields());
     }
 }
