@@ -23,5 +23,23 @@ public class Main {
 
         // to deal with this we have to make separate classes and separately implement each interface so that this problem doesn't occur
         // now we will make three separate classes and separately implement Engine, Brake, Media interface.
+
+
+
+        // NiceCar
+
+        NiceCar niceCar1 = new NiceCar();
+        niceCar1.start();
+        niceCar1.stop();
+        NiceCar niceCar=new NiceCar(new ElectricEngine());
+        niceCar.start();
+        niceCar.stop();
+
+        niceCar.startMusic();
+        niceCar.stopMusic();
+
+        niceCar.upgradeEngine(new PowerEngine());
+        niceCar.start();
+        niceCar.stop();
     }
 }
