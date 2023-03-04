@@ -25,5 +25,9 @@ public class MainOfParent {
         // now if we call obj.anyMethodOfAbstractClass
         // then it will give error
         // because methods inside abstract classes have no body.
+
+        // although we can't make object of parent class but we can use parent class as reference variable
+        Parent p1=new Son(45);
+        // like this
         }
     }
