@@ -1,4 +1,5 @@
 package interfaces;
+
 // interface: interfaces contains abstract functions(functions without body)
 // its like abstract class only ... functions are public and abstract..... and variables are static and final by default in interfaces.
 // interfaces mostly specifies like what the class is doing not how it is doing it.
@@ -13,6 +14,17 @@ package interfaces;
 // abstract classes can be extended by using extends keyword
 // interfaces can be implemented by using implements keyword
 // abstract classes can't be multiple inherited, but we can implement more than one interfaces
+// 2 classes which are un-related to each other can also implement the same interface.
 public interface Engine {
+//    static final int PRICE=78000;
+    // here it is obvious that variable will be static and final
+    // so no need to write that
 
+    int PRICE=78000;
+
+    void start();
+
+    void stop();
+
+    void acc();
 }
