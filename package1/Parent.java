@@ -3,6 +3,7 @@ package package1;
 import java.lang.ref.PhantomReference;
 
 // abstract class
+// an abstract class can't be final because final keyword stops the class from being inherited.
 public abstract class Parent {
     // abstract methods
     // make that method abstract, if you know that have to be implemented by the child classes
