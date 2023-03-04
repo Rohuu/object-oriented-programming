@@ -6,6 +6,10 @@ package interfaces;
 
 public class Car implements Engine,Brake,Media {
 
+//    int a=5;
+    // can we access this by making the object of car but reference type is Engine...?
+    // check Main class for this
+
     @Override
     public void brake() {
         System.out.println("I brake like a normal car");
@@ -25,17 +29,5 @@ public class Car implements Engine,Brake,Media {
     @Override
     public void acc() {
         System.out.println("I accelerate like a normal car");
-
-    }
-
-    @Override
-    public void startMedia() {
-        System.out.println("My media starts like a normal car");
-
-    }
-
-    @Override
-    public void stopMedia() {
-        System.out.println("My media stops like a normal car");
     }
 }

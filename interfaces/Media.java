@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface Media {
-    void startMedia();
+    void start();
 
-    void stopMedia();
+    void stop();
 }
