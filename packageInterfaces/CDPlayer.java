@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public class CDPlayer implements Media{
     @Override

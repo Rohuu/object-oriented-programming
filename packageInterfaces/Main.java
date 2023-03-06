@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public class Main {
     public static void main(String[] args) {

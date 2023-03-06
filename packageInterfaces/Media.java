@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public interface Media {
     void start();

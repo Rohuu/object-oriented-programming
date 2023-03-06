@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public interface Greet {
     //static methods in interface will always have a body

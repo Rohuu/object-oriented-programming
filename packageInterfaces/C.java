@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public class C implements B{
     // since interface B extends interface A

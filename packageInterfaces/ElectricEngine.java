@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public class ElectricEngine implements Engine {
 

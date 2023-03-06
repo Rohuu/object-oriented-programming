@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 public interface K { //top interface can be public or default one
     public interface NestedInterface{ // but nested interface can be anything

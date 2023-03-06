@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 // interface: interfaces contains abstract functions(functions without body)
 // its like abstract class only ... functions are public and abstract..... and variables are static and final by default in interfaces.

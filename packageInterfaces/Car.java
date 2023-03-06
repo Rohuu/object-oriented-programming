@@ -1,4 +1,4 @@
-package interfaces;
+package packageInterfaces;
 
 
 // now we are making a class which will implement engine,brake,media interface

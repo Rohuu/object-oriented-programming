@@ -1,4 +1,4 @@
-package comparator;
+package packageComparator;
 
 public class Student implements Comparable<Student> {
     float marks;
