@@ -20,5 +20,10 @@ public class MainOfWatch {
         // if we don't want that then we make deep copy of object
         // where every data-type from one object is copied to another object
         // thus change in the copied object will not impact the original object
+
+        // deep copy
+        System.out.println(Arrays.toString(casio.arr));  // [1,2,3,4]
+        System.out.println(Arrays.toString(fakeWatch.arr));  // [5,2,3,4]
+        // now original object didn't get changed coz we deeply copied that.
     }
 }

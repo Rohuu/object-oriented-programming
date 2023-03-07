@@ -11,7 +11,21 @@ public class Watch implements Cloneable{
         this.arr=arr;
     }
 
+//    @Override
+//    public Object clone() throws CloneNotSupportedException{
+//        // this is shallow copy
+//        return super.clone();
+//    }
+
+    @Override
     public Object clone() throws CloneNotSupportedException{
-        return super.clone();
+        Watch fakeWatch=(Watch)super.clone();   // this is actually shallow copy
+
+        // make a deep copy
+        fakeWatch.arr=new int[fakeWatch.arr.length];
+        for (int i = 0; i < fakeWatch.arr.length; i++) {
+            fakeWatch.arr[i]=this.arr[i];
+        }
+        return fakeWatch;
     }
 }
