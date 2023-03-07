@@ -1,7 +1,5 @@
 package package2;
 
-import com.sun.security.jgss.GSSUtil;
-
 public class Basic {
     // all the enums explicitly extend java.lang.enum class
     // so enum can't extend anything else coz multiple inheritance is not allowed in java
