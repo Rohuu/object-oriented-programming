@@ -3,6 +3,9 @@ package package2;
 import com.sun.security.jgss.GSSUtil;
 
 public class Basic {
+    // all the enums explicitly extend java.lang.enum class
+    // so enum can't extend anything else coz multiple inheritance is not allowed in java
+    // but enum can implement as many interface as we want
     enum Week{
         // when we need fix group of objects then we need enums
         // like week days, months etc etc
@@ -17,6 +20,7 @@ public class Basic {
 
         Week() {
             System.out.println("Constructor called for "+this);
+            // this represents in elements of the class
         }
         // this is not public or protected, only private or default
         // if it was public, then it would allow us to initialise more than one object
