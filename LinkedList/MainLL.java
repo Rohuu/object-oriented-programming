@@ -10,5 +10,6 @@ public class MainLL {
         list.insertFirst(8);
         list.insertFirst(17);
 
+        list.display();
     }
 }
