@@ -6,8 +6,20 @@ public class LL {
     private Node tail;
     int size;
 
-    public LL(int size) {
+    public LL() {
         this.size = 0;
+    }
+
+    public void insertFirst(int value){
+        Node node= new Node(value);
+        node.next=head;
+        head=node;
+
+        if(tail==null){ // means this is the first item added or there is only one item
+            // in that case head,tail,node all will be same
+            tail=head;
+        }
+        size++;
     }
 
     private static class Node{
