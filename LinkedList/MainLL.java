@@ -17,5 +17,7 @@ public class MainLL {
         int deletedNumber=list.deleteFirst();
         System.out.println("Deleted number is: "+deletedNumber);
         list.display();
+        System.out.println("Deleted number is: "+list.deleteLastElement());
+        list.display();
     }
 }
