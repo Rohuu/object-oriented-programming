@@ -14,5 +14,8 @@ public class MainLL {
         list.insertLast(999);
         list.insert(100,3);
         list.display();
+        int deletedNumber=list.deleteFirst();
+        System.out.println("Deleted number is: "+deletedNumber);
+        list.display();
     }
 }
