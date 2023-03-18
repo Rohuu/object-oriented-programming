@@ -12,6 +12,7 @@ public class MainLL {
         list. insertLast(4);
         list.insertLast(99);
         list.insertLast(999);
+        list.insert(100,3);
         list.display();
     }
 }
