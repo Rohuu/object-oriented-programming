@@ -19,5 +19,7 @@ public class MainLL {
         list.display();
         System.out.println("Deleted number is: "+list.deleteLastElement());
         list.display();
+        list.delete(2);
+        list.display();
     }
 }
