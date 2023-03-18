@@ -32,6 +32,17 @@ public class LL {
         System.out.println("END");
     }
 
+    public void insertLast(int value) {
+        if(tail==null){
+            insertFirst(value);
+            return;
+        }
+        Node node=new Node(value);
+        tail.next=node;
+        tail=node;
+        size++;
+    }
+
     private static class Node{
         int value;
         Node next;

@@ -9,7 +9,9 @@ public class MainLL {
         list.insertFirst(2);
         list.insertFirst(8);
         list.insertFirst(17);
-
+        list. insertLast(4);
+        list.insertLast(99);
+        list.insertLast(999);
         list.display();
     }
 }
