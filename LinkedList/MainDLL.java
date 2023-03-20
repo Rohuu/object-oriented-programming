@@ -10,5 +10,7 @@ public class MainDLL {
         list.insertFirst(82);
         list.insertFirst(20);
         list.display();
+        list.insertLast(99);
+        list.display();
     }
 }

@@ -2,6 +2,11 @@ package LinkedList;
 
 public class DLL {
     private Node head;
+    int size;
+
+    public DLL() {
+        this.size = 0;
+    }
 
     public void insertFirst(int val) {
         Node node = new Node(val);
@@ -29,6 +34,24 @@ public class DLL {
             last=last.prev;
         }
         System.out.println("START");
+    }
+
+    public void insertLast(int val){
+        Node node=new Node(val);
+        Node last=head;
+
+        node.next=null;
+
+        if(head==null){
+            node.prev=null;
+            head=node;
+            return;
+        }
+        while (last.next!=null){
+            last=last.next;
+        }
+        last.next=node;
+        node.prev=last;
     }
 
     private class Node {
