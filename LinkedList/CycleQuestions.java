@@ -113,6 +113,17 @@ public class CycleQuestions {
         }
         return null;
     }
+    // middle of the linkedList
+    // https://leetcode.com/problems/middle-of-the-linked-list/submissions/931792214/
+    public ListNode middleNode(ListNode head) {
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null && fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+        }
+        return slow;
+    }
 }
 
 class ListNode {
