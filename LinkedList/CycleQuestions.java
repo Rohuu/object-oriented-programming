@@ -93,6 +93,26 @@ public class CycleQuestions {
         return null;
     }
 
+    // https://leetcode.com/problems/linked-list-cycle-ii/submissions/931731381/
+    public ListNode detectCycleWithoutUsingSpace(ListNode head) {
+        // without using any new space
+
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                fast=head;
+                while(fast!=slow){
+                    fast=fast.next;
+                    slow=slow.next;
+                }
+                return slow;
+            }
+        }
+        return null;
+    }
 }
 
 class ListNode {
