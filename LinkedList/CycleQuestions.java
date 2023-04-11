@@ -1,6 +1,8 @@
 package LinkedList;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class CycleQuestions {
 
@@ -66,6 +68,31 @@ public class CycleQuestions {
         }
         return ans;
     }
+
+    // https://leetcode.com/problems/linked-list-cycle-ii/submissions/931731381/
+    public ListNode detectCycle(ListNode head) {
+        // this solution has a space complexity as we are using a hashSet here
+
+        Set set = new HashSet();
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                ListNode node = head;
+                while (node != null) {
+                    if (set.add(node)) {
+                        node = node.next;
+                    } else {
+                        return node;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
 }
 
 class ListNode {
