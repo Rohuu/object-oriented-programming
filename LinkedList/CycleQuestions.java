@@ -138,6 +138,23 @@ public class CycleQuestions {
         }
         return prev;
     }
+
+    public boolean isPalindrome(ListNode head) {
+        if(head==null){
+            return true;
+        }
+        ListNode middle=middleNode(head);   // calculate middle
+        ListNode headSecond=reverseList(middle);  // reverse the other half of the list
+
+        while(head!=null && headSecond!=null){   // then iterate and check values
+            if(head.val!=headSecond.val){
+                return false;
+            }
+            head=head.next;
+            headSecond=headSecond.next;
+        }
+        return true;
+    }
 }
 
 class ListNode {
